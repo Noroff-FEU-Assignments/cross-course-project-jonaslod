@@ -293,6 +293,10 @@ footer {
     flex-direction: row;
   }
 
+  nav li a {
+    border-bottom: 0;
+  }
+
   .active {
     padding-top: 16px;
   }
