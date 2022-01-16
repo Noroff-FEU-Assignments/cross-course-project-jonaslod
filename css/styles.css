@@ -202,7 +202,6 @@ h2 {
 /*Game rating*/
 .recommended__content img {
   max-width: 100px;
-  margin-left: 10px;
 }
 
 /*Gamepage hyperlink*/
@@ -300,6 +299,11 @@ footer {
 
   .recommended-wrapper {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /*Game rating*/
+  .recommended__content img {
+    margin-left: 10px;
   }
 
   .footer-wrapper {
