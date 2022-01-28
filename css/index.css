@@ -1,0 +1,45 @@
+body,
+main {
+  background-color: #dcdcdc;
+}
+
+main {
+  padding: 0;
+}
+
+.recommended-wrapper {
+  max-width: 95vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.recommended {
+  padding: 10px;
+  border: 2px solid #1d2540;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended__image img {
+  border: 2px solid #707070;
+  border-radius: 2px;
+}
+
+.recommended__content {
+  padding: 0;
+}
+
+.recommended__content a {
+  text-decoration: none;
+}
+
+.recommended__content a:hover {
+  text-decoration: underline;
+}
+
+/*Game rating*/
+.recommended__content img {
+  max-width: 100px;
+}

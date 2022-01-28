@@ -1,0 +1,31 @@
+main {
+  padding: 10px 30px;
+}
+
+main > div {
+  display: none;
+}
+
+.contact-information {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-information img {
+  width: 35px;
+}
+
+.contact-information a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-information a:hover {
+  text-decoration: underline;
+}

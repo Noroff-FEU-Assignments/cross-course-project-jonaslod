@@ -1,0 +1,505 @@
+/*Tablet / small desktop*/
+@media (min-width: 650px) {
+  .logo-small,
+  .nav__mobile,
+  .hamburger-label {
+    display: none;
+  }
+
+  .logo-big {
+    display: inline-block;
+  }
+
+  .search-bar,
+  nav ul {
+    display: flex;
+  }
+
+  .nav__icon {
+    justify-content: end;
+    padding-right: 15px;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 360px;
+    border-radius: 4px;
+  }
+
+  nav ul {
+    align-items: end;
+    flex-direction: row;
+  }
+
+  nav li a {
+    border-bottom: 0;
+  }
+
+  .active {
+    padding-top: 16px;
+  }
+
+  body {
+    background-color: #dcdcdc;
+  }
+
+  main {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .index-main {
+    width: auto;
+    padding: 0;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    border-left: 1px solid;
+  }
+
+  footer h3 {
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+  }
+
+  /*Index
+__________________*/
+  .recommended-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /*Game rating*/
+  .recommended__content img {
+    margin-left: 10px;
+  }
+
+  /*List of games
+__________________*/
+  .hamburger-filter-label,
+  .hamburger-sort-label {
+    display: none;
+  }
+
+  .games-main h1 {
+    grid-area: game-header;
+    grid-column: -1/1;
+    position: relative;
+    top: 0;
+  }
+
+  .filter {
+    grid-area: game-filter;
+    border: 0;
+    border-right: 1px solid;
+    padding-right: 10px;
+  }
+
+  .options {
+    grid-area: game-options;
+    display: flex;
+    background-color: #dcdcdc;
+    border: 1px solid #707070;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .result {
+    grid-area: game-result;
+    margin: 0;
+    width: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .game-result {
+    position: relative;
+    padding-bottom: 120px;
+  }
+
+  .game-result__cta {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .games-main {
+    border: 1px solid;
+    padding: 20px 20px 20px 10px;
+    gap: 10px;
+    grid-template: auto 1fr / auto 1fr;
+    grid-template-areas:
+      "game-header ."
+      "game-filter game-options"
+      "game-filter game-result";
+  }
+
+  .category {
+    display: block;
+    border: 0;
+  }
+
+  .sort {
+    display: flex;
+    margin-right: 10px;
+    border: 0;
+    padding: 0;
+  }
+
+  .game-result__content,
+  .game-result__cta {
+    padding: 10px;
+  }
+
+  .category__option input {
+    display: block;
+  }
+
+  /*Cart
+__________________*/
+  .game-id,
+  .game-condition {
+    display: inline;
+  }
+
+  .go_to_checkout-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .go_to_checkout-wrapper .cta-top {
+    margin: auto 0 auto 50px;
+  }
+
+  .go_to_checkout-wrapper-bottom {
+    display: flex;
+    justify-content: right;
+  }
+
+  .go_to_checkout-wrapper-bottom a {
+    margin: 0;
+  }
+
+  .cart-main .cta-light {
+    width: 200px;
+  }
+
+  .selected-game__remove {
+    justify-content: flex-start;
+  }
+
+  .selected-game__remove img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cart-specs,
+  .selected-game,
+  .cart-price {
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 100px 1fr 80px 80px;
+  }
+
+  .cart-specs__title {
+    grid-area: cart-specs__title;
+  }
+  .cart-specs__price {
+    grid-area: cart-specs__price;
+  }
+  .cart-specs__remove {
+    grid-area: cart-specs__remove;
+  }
+
+  .cart-specs {
+    grid-template-areas: "cart-specs__title . cart-specs__price cart-specs__remove";
+  }
+
+  .selected-game__img {
+    grid-area: selected-game__img;
+  }
+
+  .selected-game__content {
+    grid-area: selected-game__content;
+  }
+
+  .selected-game__price {
+    grid-area: selected-game__price;
+  }
+
+  .selected-game__remove {
+    grid-area: selected-game__remove;
+  }
+
+  .selected-game {
+    grid-template-areas: "selected-game__img selected-game__content selected-game__price selected-game__remove";
+  }
+
+  .cart-price__title {
+    grid-area: cart-price__title;
+  }
+  .cart-price__sum {
+    grid-area: cart-price__sum;
+  }
+
+  .cart-price {
+    grid-template-areas: "cart-price__title . cart-price__sum .";
+  }
+
+  /*Account
+__________________*/
+  .account-overview__content,
+  .games-sold-by-user,
+  .review-by-user {
+    padding-bottom: 20px;
+  }
+
+  .account-overview {
+    display: grid;
+    gap: 50px;
+    padding-bottom: 10px;
+  }
+
+  .account-overview__cta a {
+    width: auto;
+  }
+
+  .account-overview__content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+
+  .games-sold-by-user,
+  .review-by-user,
+  .sold-by-users {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .games-sold-by-user {
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+  }
+
+  .games-sold-by-user > *,
+  .review-by-user > * {
+    margin: 0 20px;
+  }
+
+  /*Gamepage
+__________________*/
+  .game-overview {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-areas:
+      "gamepage-img gamepage-attributes"
+      "gamepage-description gamepage-description";
+    border: 0;
+    width: 50%;
+  }
+
+  .gamepage__title {
+    display: inline;
+    font-size: 1.8rem;
+  }
+
+  .game-overview__decription h2 {
+    margin-top: 0;
+  }
+
+  .condition {
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: 20px;
+  }
+
+  .sold-by-users {
+    margin-top: 130px;
+    gap: 20px;
+  }
+
+  /*Contact
+__________________*/
+  .contact-main > div {
+    display: block;
+  }
+
+  .contact-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  /*Checkout
+__________________*/
+  fieldset:first-of-type {
+    margin: 0;
+  }
+
+  .checkout-success__content {
+    margin-left: 20px;
+  }
+
+  .checkout {
+    display: flex;
+    gap: 20px;
+  }
+
+  .checkout > fieldset {
+    flex: 1;
+  }
+
+  .back-to-index {
+    width: 200px;
+    margin: 50px auto auto auto;
+  }
+}
+
+@media (min-width: 805px) {
+  /*Index
+__________________*/
+  .recommended-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /*List of games
+__________________*/
+  .result {
+    display: block;
+  }
+
+  .game-result {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 200px 1fr auto;
+    grid-template-areas: "game-img game-content game-cta";
+    padding: 20px;
+  }
+
+  .game-result__cta {
+    position: relative;
+  }
+
+  /*Account
+__________________*/
+  .account-overview {
+    grid-template-columns: 1fr 200px;
+  }
+
+  /*Gamepage
+__________________*/
+  .game-overview {
+    grid-template-areas:
+      "gamepage-img gamepage-attributes"
+      "gamepage-img gamepage-description";
+    grid-template-columns: 200px 1fr;
+    width: 70%;
+  }
+
+  .gamepage__title {
+    display: block;
+    font-size: auto;
+  }
+
+  .condition {
+    width: 25%;
+  }
+}
+
+/*Monitor*/
+@media (min-width: 1060px) {
+  nav li {
+    flex: revert;
+  }
+
+  nav li a {
+    padding: 4px 44px 4px 44px;
+    width: auto;
+  }
+
+  .nav__last {
+    border-radius: 0 5px 0 0;
+  }
+
+  /*Index
+__________________*/
+  .recommended-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .recommended {
+    flex-direction: row;
+  }
+
+  .recommended__image {
+    flex: 1;
+    align-self: center;
+  }
+
+  .recommended__content {
+    flex: 2;
+    padding: 10px 0 0 20px;
+  }
+
+  /*List of games
+__________________*/
+  .filter {
+    min-width: 140px;
+  }
+
+  .category__option input {
+    display: inline;
+  }
+
+  /*Gamepage
+__________________*/
+  .game-overview {
+    width: 50%;
+  }
+
+  .games-sold-by-user,
+  .review-by-user,
+  .sold-by-users {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .last-product {
+    display: inline;
+  }
+
+  .condition {
+    width: 20%;
+  }
+
+  /*Contact
+__________________*/
+  .contact-main {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-main > div {
+    flex: 3;
+  }
+
+  .contact-main > section {
+    flex: 2;
+  }
+
+  /*Account
+__________________*/
+  .account-overview {
+    gap: 200px;
+  }
+}

@@ -6,12 +6,24 @@ body {
   font-family: Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   min-height: 100vh;
-  background-color: #dcdcdc;
 }
 
 h1,
 h2 {
   font-family: "Lucida Sans Typewriter", monaco, monospace;
+}
+
+.gamepage-link {
+  color: #0e75b9;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  padding: 10px;
+}
+
+.main-max-width {
+  max-width: 1225px;
 }
 
 h1 {
@@ -27,46 +39,69 @@ header,
 nav li a:hover,
 .active {
   background-color: #b35600;
-  color: #fff;
 }
 
-.recommended,
+body,
+main,
 footer,
-.cta:hover,
 .search-bar,
-.search-bar__label {
+.search-bar__label,
+.recommended,
+.cta:hover,
+.cta-light:hover {
   background-color: #fff;
 }
 
 h1,
 nav li a,
-.footer-wrapper a {
+.footer-wrapper a,
+.search-bar__label,
+.view-more a {
   color: #000;
+}
+
+.hamburger-label,
+nav li a:hover,
+.active,
+.nav__icon a,
+.cta,
+.cta-light {
+  color: #fff;
+}
+
+.gamepage-link,
+.read_more {
+  color: #0e75b9;
 }
 
 .search-bar,
 nav ul,
 .logo-big,
-#hamburger-menu {
+#hamburger-menu,
+.last-product {
   display: none;
 }
 
 .hamburger-label,
-.recommended__content a {
+.nav__icon img,
+.gamepage-link,
+.icon-view_more {
   display: block;
 }
 
 nav li,
 nav li a,
-.nav__mobile {
+.nav__mobile,
+.featured-products > * {
   display: inline-block;
 }
 
 .logo-small,
 nav ul,
 nav li a,
-.nav__icon img,
-.recommended__image img {
+img,
+.featured-products h3,
+p {
   width: 100%;
 }
 
@@ -76,35 +111,38 @@ nav li a,
 
 header label,
 nav li a,
-.nav__icon a {
+.nav__icon a,
+.cta,
+.cta-light {
   text-align: center;
 }
 
 nav li a,
 .nav__icon a,
-.recommended__content a,
-.footer-wrapper a {
+.footer-wrapper a,
+.cta,
+.cta-light,
+.cta:hover,
+.cta-light:hover,
+.view-more a {
   text-decoration: none;
 }
 
 a:hover,
-.recommended__content a:hover,
 .read_more:hover,
-.footer-wrapper a:hover {
+.footer-wrapper h3:hover,
+.view-more a:hover {
   text-decoration: underline;
+}
+
+.gamepage-link,
+.italic {
+  font-style: italic;
 }
 
 .nav__icon {
   display: flex;
   justify-content: space-around;
-}
-
-.nav__icon a {
-  color: #fff;
-}
-
-.nav__icon p {
-  margin: 0;
 }
 
 .nav__icon img {
@@ -114,7 +152,6 @@ a:hover,
 .hamburger-label {
   padding: 10px;
   text-transform: uppercase;
-  padding-bottom: 10px;
   margin-top: 10px;
 }
 
@@ -126,7 +163,6 @@ a:hover,
 
 .search-bar__label {
   margin: 0;
-  color: #000;
   font-size: 1em;
   text-transform: capitalize;
   padding: 0 8px;
@@ -147,6 +183,7 @@ nav ul {
   margin-top: 0;
   padding-left: 0;
   flex-direction: column;
+  border-bottom: 20px solid #b35600;
 }
 
 nav li {
@@ -165,28 +202,28 @@ nav li a {
   display: flex;
 }
 
-.recommended-wrapper {
-  max-width: 95vw;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.recommended {
-  padding: 10px;
+.cta {
   border: 2px solid #1d2540;
-  display: flex;
-  flex-direction: column;
+  font-size: 1.5rem;
 }
 
-.recommended__image img {
-  border: 2px solid #707070;
-  border-radius: 2px;
+.cta-light {
+  background-color: #144359;
+  border: 2px solid #144359;
+  font-size: 1.2rem;
 }
 
-.recommended__content {
-  padding: 0;
+.cta,
+.cta-light {
+  padding: 10px 20px;
+}
+
+.cta:hover {
+  color: #1d2540;
+}
+
+.cta-light:hover {
+  color: #144359;
 }
 
 h2 {
@@ -199,21 +236,9 @@ h2 {
   font-size: 1.2em;
 }
 
-/*Game rating*/
-.recommended__content img {
-  max-width: 100px;
-}
-
-/*Gamepage hyperlink*/
-.recommended__content a {
-  color: #0e75b9;
-  font-family: "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
-}
-
 footer {
   border-top: 1px solid;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .footer-wrapper {
@@ -225,14 +250,11 @@ footer {
 .footer-wrapper > * {
   flex: 1;
   padding: 10px 15px 0 15px;
-  border-left: 1px solid;
   border-bottom: 1px solid;
 }
 
-.footer__title {
-  border-bottom: 1px solid;
-  font-size: 1.2em;
-  font-weight: bold;
+footer h3 {
+  font-size: 1.5em;
 }
 
 .footer-wrapper ul {
@@ -256,94 +278,28 @@ footer {
   padding: 5px;
 }
 
-/*Tablet / small desktop*/
-@media (min-width: 650px) {
-  .logo-small,
-  .nav__mobile,
-  .hamburger-label {
-    display: none;
-  }
-
-  .logo-big {
-    display: inline-block;
-  }
-
-  .search-bar,
-  nav ul {
-    display: flex;
-  }
-
-  .nav__icon {
-    justify-content: end;
-    padding-right: 15px;
-    gap: 15px;
-  }
-
-  .search-bar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 360px;
-    border-radius: 4px;
-  }
-
-  nav ul {
-    align-items: end;
-    border-bottom: 20px solid #b35600;
-    flex-direction: row;
-  }
-
-  nav li a {
-    border-bottom: 0;
-  }
-
-  .active {
-    padding-top: 16px;
-  }
-
-  .recommended-wrapper {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  /*Game rating*/
-  .recommended__content img {
-    margin-left: 10px;
-  }
-
-  .footer-wrapper {
-    flex-direction: row;
-  }
+/*Account and gamepage
+__________________*/
+.featured-products {
+  border: 1px solid;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
-/*Monitor*/
-@media (min-width: 1060px) {
-  nav li {
-    flex: revert;
-  }
+.featured-products > * {
+  margin: 0;
+}
 
-  nav li a {
-    padding: 4px 44px 4px 44px;
-    width: auto;
-  }
+.view-more {
+  border: 1px solid;
+  border-radius: 10px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .nav__last {
-    border-radius: 0 5px 0 0;
-  }
-
-  .recommended-wrapper {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .recommended {
-    flex-direction: row;
-  }
-
-  .recommended__image {
-    flex: 1;
-  }
-
-  .recommended__content {
-    flex: 2;
-    padding: 10px 0 0 20px;
-  }
+.icon-view_more {
+  width: 50px;
+  margin: auto;
 }
