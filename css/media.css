@@ -299,13 +299,8 @@ __________________*/
   /*Gamepage
 __________________*/
   .game-overview {
-    display: grid;
-    grid-template-columns: 200px 100px;
-    grid-template-areas:
-      "gamepage-img gamepage-attributes"
-      "gamepage-description gamepage-description";
     border: 0;
-    width: 50%;
+    width: 60%;
   }
 
   .gamepage__title {
@@ -404,7 +399,7 @@ __________________*/
       "gamepage-img gamepage-attributes"
       "gamepage-img gamepage-description";
     grid-template-columns: 200px 1fr;
-    width: 70%;
+    width: 65%;
   }
 
   .gamepage__title {
