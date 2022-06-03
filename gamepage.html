@@ -7,9 +7,9 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/gamepage.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
-    <title>GameHub | Ping Pong Championship</title>
+    <title>Loading ... | GameHub</title>
   </head>
-  <body>
+  <body id="top-of-page">
     <header>
       <a href="index.html">
         <img src="images/logo-small.png" alt="Gamehub logo" class="logo-small" />
@@ -28,7 +28,7 @@
           </a>
           <a href="cart.html" class="nav__desktop">
             <img src="images/Icons/Cart.png" alt="Cart logo" />
-            Cart
+            <span class="nav__icon-cart">Cart</span>
           </a>
           <a href="login.html" class="nav__desktop">
             <img src="images/Icons/Profile.png" alt="Profile logo" />
@@ -60,74 +60,12 @@
 
     <main class="main-max-width">
       <h1 class="gamepage__title">Ping Pong Championship</h1>
-      <section class="game-overview">
-        <div class="game-overview__img">
-          <img src="images/Products/ping_pong_championship.jpg" alt="Ping Pong Championship cover" class="gamepage-cover" />
-        </div>
-        <div class="game-overview__attributes">
-          <p class="game-system">PLAYBOX</p>
-          <p class="game-id">ID: 222</p>
-          <p class="game-genre">Action, FPS and MMO</p>
-          <p class="game-release">20/09/1999</p>
-          <img src="images/Rating.png" alt="Game rating" />
-          <a href="#" class="read_more">See reviews >></a>
-        </div>
-        <div class="game-overview__decription">
-          <h2>Description</h2>
-          <p>
-            "PING PONG CHAMPIONSHIP" is an epic game about ping pong. Be the best, or die trying. Participate in the grand international championship,
-            and earn cool prices. Customize your character to represent your style. Ages 3 and up.
-          </p>
-        </div>
-      </section>
+      <section class="game-overview"></section>
 
-      <div class="condition">
-        <div class="condition-new">
-          <p class="condition-price">499kr</p>
-          <p>Condition: new</p>
-          <p>Available</p>
-          <a href="#" class="cta">Add to cart</a>
-        </div>
-        <div class="condition-used">
-          <p class="condition-price">from 99kr</p>
-          <p>Condition: used</p>
-          <p>Available</p>
-          <a href="#sold-by-users" class="cta">View offers</a>
-        </div>
-      </div>
+      <div class="condition"></div>
 
       <section class="sold-by-users" id="sold-by-users">
         <h2>Game copies sold by users</h2>
-        <div class="featured-products">
-          <img src="images/Products/ping_pong_championship.jpg" alt="Used copy of Ping Pong Championship" />
-          <h3>Ping Pong Championship</h3>
-          <p>99kr</p>
-          <p>Condition: Good</p>
-        </div>
-        <div class="featured-products">
-          <img src="images/Products/ping_pong_championship.jpg" alt="Used copy of Ping Pong Championship" />
-          <h3>Ping Pong Championship</h3>
-          <p>110kr</p>
-          <p>Condition: Good</p>
-        </div>
-        <div class="featured-products">
-          <img src="images/Products/ping_pong_championship.jpg" alt="Used copy of Ping Pong Championship" />
-          <h3>Ping Pong Championship</h3>
-          <p>150kr</p>
-          <p>Condition: As new</p>
-        </div>
-        <div class="featured-products last-product">
-          <img src="images/Products/ping_pong_championship.jpg" alt="Used copy of Ping Pong Championship" />
-          <h3>Ping Pong Championship</h3>
-          <p>299kr</p>
-          <p>Condition: New</p>
-        </div>
-        <div class="view-more">
-          <a href="#">
-            <img src="images/Icons/View-more.png" alt="View more arrow" class="icon-view_more" />
-            View more
-          </a>
-        </div>
       </section>
     </main>
     <footer>
@@ -135,6 +73,7 @@
         <section>
           <h3><a href="#">Shortcuts</a></h3>
           <ul>
+            <li><a href="#top-of-page">Top of page</a></li>
             <li><a href="#">Account</a></li>
             <li><a href="#">Order history</a></li>
             <li><a href="#">Cookies and data storage</a></li>
@@ -175,5 +114,7 @@
       </div>
       <div class="copyright">&copy;2022 GameHub. All rights reserved.</div>
     </footer>
+    <script src="js/all.js" type="module"></script>
+    <script src="js/gamepage.js" type="module"></script>
   </body>
 </html>

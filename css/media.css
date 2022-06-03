@@ -111,7 +111,7 @@ __________________*/
 
   .result {
     grid-area: game-result;
-    margin: 0;
+    margin: 0 0 auto 0;
     width: auto;
     display: grid;
     gap: 20px;
@@ -135,7 +135,7 @@ __________________*/
     border: 1px solid;
     padding: 20px 20px 20px 10px;
     gap: 10px;
-    grid-template: auto 1fr / auto 1fr;
+    grid-template: auto 80px / auto 1fr;
     grid-template-areas:
       "game-header ."
       "game-filter game-options"
@@ -163,9 +163,16 @@ __________________*/
     display: block;
   }
 
+  .price{
+    margin-left: 0px;
+  }
+
+  .remove-game-label{
+    display: none;
+  }
+
   /*Cart
 __________________*/
-  .game-id,
   .game-condition {
     display: inline;
   }
@@ -326,14 +333,15 @@ __________________*/
 
   /*Contact
 __________________*/
-  .contact-main > div {
-    display: block;
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
   }
 
-  .contact-main {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 20px;
+  .contact-wrapper .contact-form {
+    padding-bottom: 45px;
+    margin-bottom: 0;
   }
 
   /*Checkout
@@ -479,16 +487,18 @@ __________________*/
 
   /*Contact
 __________________*/
-  .contact-main {
+  .contact-wrapper {
     flex-direction: row;
-    align-items: center;
   }
 
-  .contact-main > div {
+  .contact-wrapper .contact-form {
     flex: 3;
+    border-bottom: 0;
+    border-right: 1px solid;
+    padding: 0 45px 0 0;
   }
 
-  .contact-main > section {
+  .contact-wrapper .contact-information-wrapper {
     flex: 2;
   }
 
@@ -496,5 +506,14 @@ __________________*/
 __________________*/
   .account-overview {
     gap: 200px;
+  }
+
+  /*Cart
+__________________*/
+  .alert-outside{
+    display: block;
+  }
+  .alert-inside{
+    display: none;
   }
 }

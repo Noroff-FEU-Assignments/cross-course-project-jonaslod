@@ -7,9 +7,9 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/games.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
-    <title>GameHub | List of games</title>
+    <title>List of games | GameHub</title>
   </head>
-  <body>
+  <body id="top-of-page">
     <header>
       <a href="index.html">
         <img src="images/logo-small.png" alt="Gamehub logo" class="logo-small" />
@@ -28,7 +28,7 @@
           </a>
           <a href="cart.html" class="nav__desktop">
             <img src="images/Icons/Cart.png" alt="Cart logo" />
-            Cart
+            <span class="nav__icon-cart">Cart</span>
           </a>
           <a href="login.html" class="nav__desktop">
             <img src="images/Icons/Profile.png" alt="Profile logo" />
@@ -117,12 +117,20 @@
             <label for="genre-racing">Racing</label>
           </div>
           <div class="category__option">
+            <input type="radio" name="genre" id="genre-sport" value="sport" />
+            <label for="genre-sport">Sport</label>
+          </div>
+          <div class="category__option">
             <input type="radio" name="genre" id="genre-roleplay" value="roleplay" />
             <label for="genre-roleplay">Roleplay</label>
           </div>
           <div class="category__option">
             <input type="radio" name="genre" id="genre-simulator" value="simulator" />
             <label for="genre-simulator">Simulator</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-strategy" value="strategy" />
+            <label for="genre-strategy">Strategy</label>
           </div>
           <div class="category__option">
             <input type="radio" name="genre" id="genre-survival" value="survival" />
@@ -226,122 +234,14 @@
           </div>
         </form>
       </div>
-      <section class="result">
-        <div class="game-result">
-          <div class="game-result__img">
-            <img src="images/Products/ping_pong_championship.jpg" alt="Ping Pong Championship cover" />
-          </div>
-          <div class="game-result__content">
-            <h2>Ping Pong Championship</h2>
-            <img src="images/Rating.png" alt="Game rating" />
-            <p class="game-id">ID: 1234567</p>
-            <p class="game-description">
-              "PING PONG CHAMPIONSHIP" is an epic game about ping pong. Be ...
-              <a href="gamepage.html" class="gamepage-link">Read more >></a>
-            </p>
-          </div>
-          <div class="game-result__cta">
-            <a class="cta">Add to cart</a>
-            <p class="price">499kr</p>
-          </div>
-        </div>
-        <div class="game-result">
-          <div class="game-result__img">
-            <img src="images/Products/super_duper.jpg" alt="Super Duper cover" />
-          </div>
-          <div class="game-result__content">
-            <h2>Super Duper</h2>
-            <img src="images/Rating.png" alt="Game rating" />
-            <p class="game-id">ID: 1234567</p>
-            <p class="game-description">
-              "SUPER DUPER" is a game about being SUPER DUPER&trade;. Be ...
-              <a href="gamepage.html" class="gamepage-link">Read more >></a>
-            </p>
-          </div>
-          <div class="game-result__cta">
-            <a class="cta">Add to cart</a>
-            <p class="price">499kr</p>
-          </div>
-        </div>
-        <div class="game-result">
-          <div class="game-result__img">
-            <img src="images/Products/furious.jpg" alt="Furious cover" />
-          </div>
-          <div class="game-result__content">
-            <h2>Furious</h2>
-            <img src="images/Rating.png" alt="Game rating" />
-            <p class="game-id">ID: 1234567</p>
-            <p class="game-description">
-              "FURIOUS" is a game about feelings! be FURIOUS or be happy ...
-              <a href="gamepage.html" class="gamepage-link">Read more >></a>
-            </p>
-          </div>
-          <div class="game-result__cta">
-            <a class="cta">Add to cart</a>
-            <p class="price">499kr</p>
-          </div>
-        </div>
-        <div class="game-result">
-          <div class="game-result__img">
-            <img src="images/Products/boxer.jpg" alt="Boxer cover" />
-          </div>
-          <div class="game-result__content">
-            <h2>Boxer</h2>
-            <img src="images/Rating.png" alt="Game rating" />
-            <p class="game-id">ID: 1234567</p>
-            <p class="game-description">
-              "BOXER" is a game about boxing. Box, box, and box some more ...
-              <a href="gamepage.html" class="gamepage-link">Read more >></a>
-            </p>
-          </div>
-          <div class="game-result__cta">
-            <a class="cta">Add to cart</a>
-            <p class="price">499kr</p>
-          </div>
-        </div>
-        <div class="game-result">
-          <div class="game-result__img">
-            <img src="images/Products/space_war.jpg" alt="Space War cover" />
-          </div>
-          <div class="game-result__content">
-            <h2>Space War</h2>
-            <img src="images/Rating.png" alt="Game rating" />
-            <p class="game-id">ID: 1234567</p>
-            <p class="game-description">
-              "SPACE WAR" (not to be confused with "STAR WARS") is a game ...
-              <a href="gamepage.html" class="gamepage-link">Read more >></a>
-            </p>
-          </div>
-          <div class="game-result__cta">
-            <a class="cta">Add to cart</a>
-            <p class="price">499kr</p>
-          </div>
-        </div>
-        <div class="game-result">
-          <div class="game-result__img">
-            <img src="images/Products/cyberpunk.jpg" alt="Cyberpunk cover" />
-          </div>
-          <div class="game-result__content">
-            <h2>Cyberpunk</h2>
-            <img src="images/Rating.png" alt="Game rating" />
-            <p class="game-id">ID: 1234567</p>
-            <p class="game-description">
-              "CYBERPUNK" is a game about being a punk in cyberspace. Steal ...
-              <a href="gamepage.html" class="gamepage-link">Read more >></a>
-            </p>
-          </div>
-          <div class="game-result__cta">
-            <a class="cta">Add to cart</a>
-            <p class="price">499kr</p>
-          </div>
-        </div>
-      </section>
+      <section class="result"></section>
     </main>
     <footer>
       <div class="footer-wrapper">
         <section>
           <h3><a href="#">Shortcuts</a></h3>
           <ul>
+            <li><a href="#top-of-page">Top of page</a></li>
             <li><a href="#">Account</a></li>
             <li><a href="#">Order history</a></li>
             <li><a href="#">Cookies and data storage</a></li>
@@ -382,5 +282,7 @@
       </div>
       <div class="copyright">&copy;2022 GameHub. All rights reserved.</div>
     </footer>
+    <script src="js/all.js" type="module"></script>
+    <script src="js/games.js" type="module"></script>
   </body>
 </html>

@@ -32,9 +32,13 @@ h2 {
   margin: 0;
 }
 
+.cta,
+.game-overview__attributes img{
+  display: block;
+}
+
 .game-overview__attributes img {
   max-width: 150px;
-  display: block;
 }
 
 .game-overview__decription {
@@ -67,8 +71,8 @@ h2 {
   font-weight: bold;
 }
 
-.cta {
-  display: block;
+.cta,
+.condition-new__cta-wrapper .exists-in-cart{
   margin-top: 10px;
 }
 
@@ -82,4 +86,12 @@ h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   align-items: center;
+}
+
+.undefined-cover{
+  max-width: 100px;
+}
+
+.condition-new__cta-wrapper button{
+  min-width: 100%;
 }

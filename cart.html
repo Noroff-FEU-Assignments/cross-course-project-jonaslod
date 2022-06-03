@@ -7,9 +7,9 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/cart.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
-    <title>GameHub | Cart</title>
+    <title>Cart | GameHub</title>
   </head>
-  <body class="cart-body">
+  <body id="top-of-page" class="cart-body">
     <header>
       <a href="index.html">
         <img src="images/logo-small.png" alt="Gamehub logo" class="logo-small" />
@@ -28,7 +28,7 @@
           </a>
           <a href="cart.html" class="nav__desktop">
             <img src="images/Icons/Cart_hover.png" alt="Cart logo" />
-            Cart
+            <span class="nav__icon-cart">Cart</span>
           </a>
           <a href="login.html" class="nav__desktop">
             <img src="images/Icons/Profile.png" alt="Profile logo" />
@@ -63,64 +63,13 @@
         <h1>Cart - overview</h1>
         <a href="checkout.html" class="cta-light cta-top">Go to checkout</a>
       </div>
+      <div class="cart-alert"></div>
       <div class="cart-specs">
         <p class="cart-specs__title">Game</p>
         <p class="cart-specs__price">Price</p>
         <p class="cart-specs__remove">Remove</p>
       </div>
-      <section class="cart-overview">
-        <div class="selected-game">
-          <div class="selected-game__img">
-            <img src="images/Products/ping_pong_championship.jpg" alt="Ping Pong Championship cover" />
-          </div>
-          <div class="selected-game__content">
-            <h2>Ping Pong Championship</h2>
-            <p class="game-id">ID: 1234567</p>
-            <a href="gamepage.html" class="cart-link">View game >></a>
-            <p class="game-condition">Condition: new</p>
-          </div>
-          <div class="selected-game__price">
-            <p>499kr</p>
-          </div>
-          <div class="selected-game__remove">
-            <img src="images/Icons/Remove.png" alt="Remove game icon" />
-          </div>
-        </div>
-        <div class="selected-game">
-          <div class="selected-game__img">
-            <img src="images/Products/super_duper.jpg" alt="Super Duper cover" />
-          </div>
-          <div class="selected-game__content">
-            <h2>Super Duper</h2>
-            <p class="game-id">ID: 1234567</p>
-            <a href="gamepage.html" class="cart-link">View game >></a>
-            <p class="game-condition">Condition: new</p>
-          </div>
-          <div class="selected-game__price">
-            <p>499kr</p>
-          </div>
-          <div class="selected-game__remove">
-            <img src="images/Icons/Remove.png" alt="Remove game icon" />
-          </div>
-        </div>
-        <div class="selected-game">
-          <div class="selected-game__img">
-            <img src="images/Products/space_war.jpg" alt="Space War cover" />
-          </div>
-          <div class="selected-game__content">
-            <h2>Space War</h2>
-            <p class="game-id">ID: 1234567</p>
-            <a href="gamepage.html" class="cart-link">View game >></a>
-            <p class="game-condition">Condition: new</p>
-          </div>
-          <div class="selected-game__price">
-            <p>499kr</p>
-          </div>
-          <div class="selected-game__remove">
-            <img src="images/Icons/Remove.png" alt="Remove game icon" />
-          </div>
-        </div>
-      </section>
+      <section class="cart-overview"></section>
       <div class="cart-price">
         <p class="cart-price__title">Total price:</p>
         <p class="cart-price__sum">1497kr</p>
@@ -134,6 +83,7 @@
         <section>
           <h3><a href="#">Shortcuts</a></h3>
           <ul>
+            <li><a href="#top-of-page">Top of page</a></li>
             <li><a href="#">Account</a></li>
             <li><a href="#">Order history</a></li>
             <li><a href="#">Cookies and data storage</a></li>
@@ -174,5 +124,7 @@
       </div>
       <div class="copyright">&copy;2022 GameHub. All rights reserved.</div>
     </footer>
+    <script src="js/all.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
   </body>
 </html>

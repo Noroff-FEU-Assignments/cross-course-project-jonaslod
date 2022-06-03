@@ -48,7 +48,8 @@ footer,
 .search-bar__label,
 .recommended,
 .cta:hover,
-.cta-light:hover {
+.cta-light:hover,
+.exists-in-cart {
   background-color: #fff;
 }
 
@@ -140,6 +141,10 @@ a:hover,
   font-style: italic;
 }
 
+.bold{
+  font-weight: bold
+}
+
 .nav__icon {
   display: flex;
   justify-content: space-around;
@@ -202,7 +207,7 @@ nav li a {
   display: flex;
 }
 
-.cta {
+.cta, .exists-in-cart {
   border: 2px solid #1d2540;
   font-size: 1.5rem;
 }
@@ -214,12 +219,20 @@ nav li a {
 }
 
 .cta,
-.cta-light {
+.cta-light, 
+.exists-in-cart {
   padding: 10px 20px;
 }
 
-.cta:hover {
+.cta:hover, .exists-in-cart {
   color: #1d2540;
+}
+
+.search-bar__btn:hover,
+.cta:hover,
+.cta-light:hover,
+.checkout__cta:hover{
+  cursor: pointer;
 }
 
 .cta-light:hover {
