@@ -316,3 +316,17 @@ __________________*/
   width: 50px;
   margin: auto;
 }
+
+.loading{
+  border: 16px solid #000;
+  border-top: 16px solid #eb8521;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin{
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg);}
+}

@@ -1,11 +1,12 @@
 import findInCart from "./findInCart.js";
-import findInProducts from "./findInProducts.js";
+import getProducts from "./getProducts.js";
 import getCart from "./getCart.js";
 import updateCart from "./updateCart.js";
 
-export default function addToCart(btn){    
+export default async function addToCart(btn){
     const productToAddId = btn.dataset.id;
-    const productToAdd = findInProducts(productToAddId);
+    const productUrl = `https://marieogjonas.com/jonas/skole/cross-course-project/wp-json/wc/store/products/${productToAddId}`;
+    const productToAdd = await getProducts(productUrl);
     const productAlreadyAdded = findInCart(productToAddId);
     btn.disabled = true;
     btn.classList.remove("cta");

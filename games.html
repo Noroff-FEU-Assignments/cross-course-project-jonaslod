@@ -85,72 +85,72 @@
 
           <p>Genre</p>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-action" value="action" />
+            <input type="radio" name="genre" id="genre-action" value="16" data-genre="Action" />
             <label for="genre-action">Action</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-FPS" value="FPS" />
-            <label for="genre-FPS">FPS</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-casual" value="casual" />
-            <label for="genre-casual">Casual</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-adventure" value="adventure" />
+            <input type="radio" name="genre" id="genre-adventure" value="31" data-genre="Adventure" />
             <label for="genre-adventure">Adventure</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-indie" value="indie" />
-            <label for="genre-indie">Indie</label>
+            <input type="radio" name="genre" id="genre-arcade" value="48" data-genre="Arcade" />
+            <label for="genre-arcade">Arcade</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-fantasy" value="fantasy" />
+            <input type="radio" name="genre" id="genre-casual" value="26" data-genre="Casual" />
+            <label for="genre-casual">Casual</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-fantasy" value="46" data-genre="Fantasy" />
             <label for="genre-fantasy">Fantasy</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-puzzle" value="puzzle" />
-            <label for="genre-puzzle">Puzzle</label>
+            <input type="radio" name="genre" id="genre-FPS" value="18" data-genre="FPS" />
+            <label for="genre-FPS">FPS</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-racing" value="racing" />
-            <label for="genre-racing">Racing</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-sport" value="sport" />
-            <label for="genre-sport">Sport</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-roleplay" value="roleplay" />
-            <label for="genre-roleplay">Roleplay</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-simulator" value="simulator" />
-            <label for="genre-simulator">Simulator</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-strategy" value="strategy" />
-            <label for="genre-strategy">Strategy</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-survival" value="survival" />
-            <label for="genre-survival">Survival</label>
-          </div>
-          <div class="category__option">
-            <input type="radio" name="genre" id="genre-horror" value="horror" />
+            <input type="radio" name="genre" id="genre-horror" value="29" data-genre="Horror" />
             <label for="genre-horror">Horror</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-MMO" value="MMO" />
+            <input type="radio" name="genre" id="genre-indie" value="45" data-genre="Indie" />
+            <label for="genre-indie">Indie</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-MMO" value="19" data-genre="MMO" />
             <label for="genre-MMO">MMO</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-RPG" value="RPG" />
+            <input type="radio" name="genre" id="genre-puzzle" value="24" data-genre="Puzzle" />
+            <label for="genre-puzzle">Puzzle</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-racing" value="33" data-genre="Racing" />
+            <label for="genre-racing">Racing</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-roleplay" value="25" data-genre="Roleplay" />
+            <label for="genre-roleplay">Roleplay</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-RPG" value="32" data-genre="RPG" />
             <label for="genre-RPG">RPG</label>
           </div>
           <div class="category__option">
-            <input type="radio" name="genre" id="genre-arcade" value="arcade" />
-            <label for="genre-arcade">Arcade</label>
+            <input type="radio" name="genre" id="genre-simulator" value="47" data-genre="Simulator" />
+            <label for="genre-simulator">Simulator</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-sport" value="27" data-genre="Sport" />
+            <label for="genre-sport">Sport</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-strategy" value="28" data-genre="Strategy" />
+            <label for="genre-strategy">Strategy</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-survival" value="30" data-genre="Survival" />
+            <label for="genre-survival">Survival</label>
           </div>
 
           <p>System</p>
@@ -222,19 +222,26 @@
           <div>
             <label for="sort-select">Sort:</label>
             <select name="sort-select" class="sort-select" id="sort-select">
-              <option value="news">News</option>
-              <option value="popular">Popular</option>
+              <!--<option value="news">News</option>-->
+              <!--<option value="popular">Popular</option>-->
+              <option id="sort-select__default" value="">Sort</option>
+              <option value="featured">Featured</option>
               <option value="alphabetical">Alphabetical</option>
               <option value="price_low-high">Price low-high</option>
               <option value="price_high-low">Price high-low</option>
-              <option value="most_sold">Most sold</option>
+              <!--<option value="most_sold">Most sold</option>-->
               <option value="user_review">User review</option>
-              <option value="sale">Sale</option>
+              <!--<option value="sale">Sale</option>-->
             </select>
           </div>
         </form>
       </div>
-      <section class="result"></section>
+      <section class="result">
+        <div>
+          <h2>GameHub is currently loading ...</h2>
+          <div class="loading"></div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-wrapper">
