@@ -7,7 +7,7 @@ The cross-course project was a year-long project, spanning all courses in my fir
 - A home page showing some featured/recommended games to the user.
 - A list of games page showing all available games. The user can sort through the games using a search input, radio buttons for category, and a select for sorting by featured, alphabetical, price low-high/high-low and user review. The user can also add games to their cart.
 - A game specific page built dynamically based on which game the user selected. This page contains details on the game. The user can also add the game to their cart through this page.
-- A contact page where the user can fill out a contact form or view other methods (phone number, social media and email) ways of contacting GameHub.
+- A contact page where the user can fill out a contact form or view other methods (phone number, social media and email) of contacting GameHub.
 - A cart page where the user can view their selected games and remove them.
 - A checkout page where the user can fill out a form detailing delivery and card information (only front-end).
 - A checkout successful page.
