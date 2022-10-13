@@ -29,7 +29,7 @@ git clone https://github.com/Noroff-FEU-Assignments/cross-course-project-jonaslo
 If you wish to contribute by sending in feedback, you are welcome to do so. I am relatively new to front-end development, and I am sure there are many improvements to be made. You are also able to submit code to the project, since the project is uploaded on a public GitHub repository. If you want to do so, be sure to open a pull request so the code can be reviewed.
 
 ## Contact
-[My LinkedIn page](www.linkedin.com)
+[My Twitter profile](https://twitter.com/jonaslodcontact)
 
 ## Additional screenshots
 ![cross-course-project_2](https://user-images.githubusercontent.com/95305401/194036871-940c3001-28b2-4abf-b020-ec587b7b66c0.jpg)
