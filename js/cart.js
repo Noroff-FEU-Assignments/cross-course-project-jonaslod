@@ -23,7 +23,7 @@ function showCart(){
                 altText = checkUndefined(product.images[0].alt, " alt text");
             }
             const title = checkUndefined(product.name, " game");
-            const price = checkUndefined((product.prices.price/100), " price ");
+            const price = checkUndefined((product.prices.price), " price ");
 
             cartOverview.innerHTML += `
                 <div class="selected-game" id="${id}-wrapper">
@@ -45,7 +45,7 @@ function showCart(){
                         <p>${price}kr</p>
                     </div>
                 </div>`;
-            totalPrice+=price;
+            totalPrice+=parseInt(price);
         });
 
         if(!totalPrice || typeof totalPrice !== "number"){

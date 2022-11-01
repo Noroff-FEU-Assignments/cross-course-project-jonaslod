@@ -27,7 +27,7 @@ try {
         rating = checkUndefined(product.tags[0].name, "-rating");
     }
     const description = checkUndefined(product.description, " description");
-    const price = checkUndefined((product.prices.price/100), " price ");
+    const price = checkUndefined((product.prices.price), " price ");
 
     document.querySelector(".gamepage__title").innerHTML = title;
 

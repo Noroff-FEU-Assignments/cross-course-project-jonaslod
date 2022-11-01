@@ -15,7 +15,7 @@ try {
                 altText = checkUndefined(product.images[0].alt, " alt text");
             }
             const title = checkUndefined(product.name, " game");
-            const price = checkUndefined((product.prices.price/100), " price ");
+            const price = checkUndefined((product.prices.price), " price ");
             let rating = "undefined-rating";
             if(product.tags.length>0){
                 rating = checkUndefined(product.tags[0].name, "-rating");

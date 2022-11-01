@@ -52,7 +52,7 @@ function showProducts(catalogue, userInput, sortingType){
                 const description = checkUndefined(product.description, " description");
                 const id = checkUndefined(product.id);
                 const genres = checkUndefined(product.categories);
-                const price = checkUndefined((product.prices.price/100), " price ");
+                const price = checkUndefined((product.prices.price), " price ");
     
                 resultContainer.innerHTML+=`
                     <div class="game-result">
