@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Search or browse through our stock of new/used games!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/games.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <title>List of games | GameHub</title>
+  </head>
+  <body id="top-of-page">
+    <header>
+      <a href="index.html">
+        <img src="images/logo-small.png" alt="Gamehub logo" class="logo-small" />
+        <img src="images/logo-big.png" alt="Gamehub logo" class="logo-big" />
+      </a>
+      <!--Main site navigation, icons, including search bar (redirects to games.html), and navigation bar-->
+      <nav>
+        <div class="nav__icon">
+          <a href="index.html" class="nav__mobile">
+            <img src="images/Icons/Home.png" alt="Home logo" />
+            Home
+          </a>
+          <a href="games.html" class="nav__mobile">
+            <img src="images/Icons/Search_hover.png" alt="Search logo" />
+            Search
+          </a>
+          <a href="cart.html" class="nav__desktop">
+            <img src="images/Icons/Cart.png" alt="Cart logo" />
+            <span class="nav__icon-cart">Cart</span>
+          </a>
+          <a href="login.html" class="nav__desktop">
+            <img src="images/Icons/Profile.png" alt="Profile logo" />
+            Profile
+          </a>
+          <a href="contact.html" class="nav__desktop">
+            <img src="images/Icons/Contact.png" alt="Contact logo" />
+            Contact
+          </a>
+        </div>
+        <label for="hamburger-menu" class="hamburger-label">Menu</label>
+        <input type="checkbox" id="hamburger-menu" />
+        <div class="search-bar">
+          <label for="search" class="search-bar__label">Search for game: </label>
+          <input type="search" id="search" class="search-bar__input" name="search" placeholder="Search ..." aria-label="Search for spesific game" />
+          <input type="submit" value="Search" class="search-bar__btn" />
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html" class="active">List of games</a></li>
+          <li><a href="games.html">News</a></li>
+          <li><a href="games.html">Pre-order</a></li>
+          <li><a href="games.html">New games</a></li>
+          <li><a href="games.html">Used games</a></li>
+          <li><a href="games.html" class="nav__last">Popular</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="games-main">
+      <h1>Games in stock.</h1>
+      <!--Category controls-->
+      <div class="filter">
+        <label class="hamburger-filter-label cta-light" for="hamburger-filter-menu"> Filter search </label>
+        <input type="checkbox" id="hamburger-filter-menu" />
+        <form action="form-success.php" method="POST" class="category">
+          <p>Type of game</p>
+          <div class="category__option">
+            <input type="radio" name="type" id="type-new" value="new" checked />
+            <label for="type-new">New</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="type" id="type-used" value="used" />
+            <label for="type-used">Used</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="type" id="type-pre_order" value="pre_order" />
+            <label for="type-pre_order">Pre-order</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="type" id="type-new_releases" value="new_releases" />
+            <label for="type-new_releases">New releases</label>
+          </div>
+
+          <p>Genre</p>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-action" value="16" data-genre="Action" />
+            <label for="genre-action">Action</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-adventure" value="31" data-genre="Adventure" />
+            <label for="genre-adventure">Adventure</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-arcade" value="48" data-genre="Arcade" />
+            <label for="genre-arcade">Arcade</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-casual" value="26" data-genre="Casual" />
+            <label for="genre-casual">Casual</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-fantasy" value="46" data-genre="Fantasy" />
+            <label for="genre-fantasy">Fantasy</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-FPS" value="18" data-genre="FPS" />
+            <label for="genre-FPS">FPS</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-horror" value="29" data-genre="Horror" />
+            <label for="genre-horror">Horror</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-indie" value="45" data-genre="Indie" />
+            <label for="genre-indie">Indie</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-MMO" value="19" data-genre="MMO" />
+            <label for="genre-MMO">MMO</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-puzzle" value="24" data-genre="Puzzle" />
+            <label for="genre-puzzle">Puzzle</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-racing" value="33" data-genre="Racing" />
+            <label for="genre-racing">Racing</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-roleplay" value="25" data-genre="Roleplay" />
+            <label for="genre-roleplay">Roleplay</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-RPG" value="32" data-genre="RPG" />
+            <label for="genre-RPG">RPG</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-simulator" value="47" data-genre="Simulator" />
+            <label for="genre-simulator">Simulator</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-sport" value="27" data-genre="Sport" />
+            <label for="genre-sport">Sport</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-strategy" value="28" data-genre="Strategy" />
+            <label for="genre-strategy">Strategy</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="genre" id="genre-survival" value="30" data-genre="Survival" />
+            <label for="genre-survival">Survival</label>
+          </div>
+
+          <p>System</p>
+          <div class="category__option">
+            <input type="radio" name="system" id="system-playbox" value="playbox" />
+            <label for="system-playbox">Playbox</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="system" id="system-swatch" value="swatch" />
+            <label for="system-swatch">Swatch</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="system" id="system-gamegirl" value="gamegirl" />
+            <label for="system-gamegirl">Gamegirl</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="system" id="system-playcube" value="playcube" />
+            <label for="system-playcube">Playcube</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="system" id="system-PC" value="PC" />
+            <label for="system-PC">PC</label>
+          </div>
+
+          <p>Release year</p>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-1980-1990" value="release_year-1980-1990" />
+            <label for="release_year-1980-1990">1980-1990</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-1991-2000" value="release_year-1991-2000" />
+            <label for="release_year-1991-2000">1991-2000</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-2001-2005" value="release_year-2001-2005" />
+            <label for="release_year-2001-2005">2001-2005</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-2006-2010" value="release_year-2006-2010" />
+            <label for="release_year-2006-2010">2006-2010</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-2011-2015" value="release_year-2011-2015" />
+            <label for="release_year-2011-2015">2011-2015</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-2016-2020" value="release_year-2016-2020" />
+            <label for="release_year-2016-2020">2016-2020</label>
+          </div>
+          <div class="category__option">
+            <input type="radio" name="release_year" id="release_year-2021-" value="release_year-2021-" />
+            <label for="release_year-2021-">2021-</label>
+          </div>
+        </form>
+      </div>
+      <div class="options">
+        <label class="hamburger-sort-label cta-light" for="hamburger-sort-menu"> Sort options </label>
+        <input type="checkbox" id="hamburger-sort-menu" />
+        <div class="game-search">
+          <label for="game-search__input">Search for game: </label>
+          <input type="search" id="game-search__input" name="game search" placeholder="Search for game ..." aria-label="Search for spesific game" />
+          <input type="submit" value="Search" class="game-search__btn" />
+        </div>
+        <form action="form-success.php" method="POST" class="sort">
+          <div>
+            <label for="available">Available</label>
+            <input type="checkbox" name="available" id="available" value="available" />
+          </div>
+          <div>
+            <label for="sort-select">Sort:</label>
+            <select name="sort-select" class="sort-select" id="sort-select">
+              <!--<option value="news">News</option>-->
+              <!--<option value="popular">Popular</option>-->
+              <option id="sort-select__default" value="">Sort</option>
+              <option value="featured">Featured</option>
+              <option value="alphabetical">Alphabetical</option>
+              <option value="price_low-high">Price low-high</option>
+              <option value="price_high-low">Price high-low</option>
+              <!--<option value="most_sold">Most sold</option>-->
+              <option value="user_review">User review</option>
+              <!--<option value="sale">Sale</option>-->
+            </select>
+          </div>
+        </form>
+      </div>
+      <section class="result">
+        <div>
+          <h2>GameHub is currently loading ...</h2>
+          <div class="loading"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <section>
+          <h3><a href="#">Shortcuts</a></h3>
+          <ul>
+            <li><a href="#top-of-page">Top of page</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Order history</a></li>
+            <li><a href="#">Cookies and data storage</a></li>
+            <li><a href="#">Privacy settings</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="#">About Gamehub</a></h3>
+          <ul>
+            <li><a href="#">About GameHub</a></li>
+            <li><a href="contact.html">Contact information</a></li>
+            <li><a href="#">Work for GameHub</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="#">Support</a></h3>
+          <ul>
+            <li><a href="#">Customer support</a></li>
+            <li><a href="#">Frequently asked questions</a></li>
+            <li><a href="#">Complaints and warranty</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="contact.html">Contact GameHub</a></h3>
+          <div class="contact__icon">
+            <img src="images/Icons/Phone.png" alt="Phone icon" />
+            <p>Monday-Saturday: 07:00-14:00. Sunday: Closed</p>
+          </div>
+          <div class="contact__icon">
+            <img src="images/Icons/Location.png" alt="Location icon" />
+            <p>Fake address 1, 007, Krypton</p>
+          </div>
+          <div class="contact__icon">
+            <img src="images/Icons/Mail.png" alt="Mail icon" />
+            <p>GameHub Corp, Fake address 1, 007, Krypton</p>
+          </div>
+        </section>
+      </div>
+      <div class="copyright">&copy;2022 GameHub. All rights reserved.</div>
+    </footer>
+    <script src="js/all.js" type="module"></script>
+    <script src="js/games.js" type="module"></script>
+  </body>
+</html>

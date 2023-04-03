@@ -1,0 +1,97 @@
+main {
+  position: relative;
+}
+
+h1 {
+  padding: 0;
+}
+
+h2 {
+  grid-column: -1/1;
+}
+
+.game-overview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  grid-template-areas:
+    "gamepage-img gamepage-attributes"
+    "gamepage-description gamepage-description";
+  border-bottom: 1px solid;
+}
+
+.game-overview__img {
+  grid-area: gamepage-img;
+}
+
+.game-overview__attributes {
+  grid-area: gamepage-attributes;
+}
+
+.game-overview__attributes > * {
+  margin: 0;
+}
+
+.cta,
+.game-overview__attributes img{
+  display: block;
+}
+
+.game-overview__attributes img {
+  max-width: 150px;
+}
+
+.game-overview__decription {
+  grid-area: gamepage-description;
+}
+
+.game-overview__decription h2 {
+  margin-top: 20px;
+}
+
+.condition {
+  width: 80vw;
+  margin: auto;
+}
+
+.condition > * {
+  margin: 20px 0;
+  border: 1px solid;
+  text-align: right;
+  padding: 10px;
+}
+
+.condition-new > *,
+.condition-used > * {
+  margin: 0;
+}
+
+.condition-price {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.cta,
+.condition-new__cta-wrapper .exists-in-cart{
+  margin-top: 10px;
+}
+
+.sold-by-users {
+  border-top: 1px solid;
+  padding-top: 10px;
+}
+
+.sold-by-users {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  align-items: center;
+}
+
+.undefined-cover{
+  max-width: 100px;
+}
+
+.condition-new__cta-wrapper button{
+  min-width: 100%;
+}

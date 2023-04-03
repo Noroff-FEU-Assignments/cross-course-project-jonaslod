@@ -1,0 +1,36 @@
+main {
+  max-width: 650px;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid;
+}
+
+form > div,
+.cta-light {
+  margin-top: 20px;
+}
+
+fieldset:first-of-type {
+  margin-bottom: 20px;
+}
+
+.back-to-index {
+  display: block;
+}

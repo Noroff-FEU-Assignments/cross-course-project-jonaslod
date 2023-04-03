@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Buy new/used games, or sell your own on GameHub!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <title>Home | GameHub</title>
+  </head>
+  <body id="top-of-page">
+    <header>
+      <a href="index.html">
+        <img src="images/logo-small.png" alt="Gamehub logo" class="logo-small" />
+        <img src="images/logo-big.png" alt="Gamehub logo" class="logo-big" />
+      </a>
+      <!--Main site navigation, icons, including search bar (redirects to games.html), and navigation bar-->
+      <nav>
+        <div class="nav__icon">
+          <a href="index.html" class="nav__mobile">
+            <img src="images/Icons/Home_hover.png" alt="Home logo" />
+            Home
+          </a>
+          <a href="games.html" class="nav__mobile">
+            <img src="images/Icons/Search.png" alt="Search logo" />
+            Search
+          </a>
+          <a href="cart.html" class="nav__desktop">
+            <img src="images/Icons/Cart.png" alt="Cart logo" />
+            <span class="nav__icon-cart">Cart</span>
+          </a>
+          <a href="login.html" class="nav__desktop">
+            <img src="images/Icons/Profile.png" alt="Profile logo" />
+            Profile
+          </a>
+          <a href="contact.html" class="nav__desktop">
+            <img src="images/Icons/Contact.png" alt="Contact logo" />
+            Contact
+          </a>
+        </div>
+        <label for="hamburger-menu" class="hamburger-label">Menu</label>
+        <input type="checkbox" id="hamburger-menu" />
+        <div class="search-bar">
+          <label for="search" class="search-bar__label">Search for game: </label>
+          <input type="search" id="search" class="search-bar__input" name="search" placeholder="Search ..." aria-label="Search for spesific game" />
+          <input type="submit" value="Search" class="search-bar__btn" />
+        </div>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="games.html">List of games</a></li>
+          <li><a href="games.html">News</a></li>
+          <li><a href="games.html">Pre-order</a></li>
+          <li><a href="games.html">New games</a></li>
+          <li><a href="games.html">Used games</a></li>
+          <li><a href="games.html" class="nav__last">Popular</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="index-main">
+      <h1>Recommended games</h1>
+      <div class="recommended-wrapper">
+        <div>
+          <h2>GameHub is currently loading ...</h2>
+          <div class="loading"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <section>
+          <h3><a href="#">Shortcuts</a></h3>
+          <ul>
+            <li><a href="#top-of-page">Top of page</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Order history</a></li>
+            <li><a href="#">Cookies and data storage</a></li>
+            <li><a href="#">Privacy settings</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="#">About Gamehub</a></h3>
+          <ul>
+            <li><a href="#">About GameHub</a></li>
+            <li><a href="contact.html">Contact information</a></li>
+            <li><a href="#">Work for GameHub</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="#">Support</a></h3>
+          <ul>
+            <li><a href="#">Customer support</a></li>
+            <li><a href="#">Frequently asked questions</a></li>
+            <li><a href="#">Complaints and warranty</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3><a href="contact.html">Contact GameHub</a></h3>
+          <div class="contact__icon">
+            <img src="images/Icons/Phone.png" alt="Phone icon" />
+            <p>Monday-Saturday: 07:00-14:00. Sunday: Closed</p>
+          </div>
+          <div class="contact__icon">
+            <img src="images/Icons/Location.png" alt="Location icon" />
+            <p>Fake address 1, 007, Krypton</p>
+          </div>
+          <div class="contact__icon">
+            <img src="images/Icons/Mail.png" alt="Mail icon" />
+            <p>GameHub Corp, Fake address 1, 007, Krypton</p>
+          </div>
+        </section>
+      </div>
+      <div class="copyright">&copy;2022 GameHub. All rights reserved.</div>
+    </footer>
+    <script src="js/all.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
